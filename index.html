@@ -1,11 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fruits brust</title>
-</head>
-<body>
-    
-</body>
+    <!-- daisy ui -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind personal config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font aweasome -->
+    <script src="https://kit.fontawesome.com/079e32eb11.js" crossorigin="anonymous"></script>
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+  </head>
+  <body class="font-lato max-w-screen-xl mx-auto  mt-12">
+    <!-- header section -->
+ <header>
+     <!-- navbar -->
+    <nav>
+        <div class=" flex flex-row-reverse lg:flex-row navbar bg-base-100 md:bg-[#F85559] lg:bg-[#F85559] rounded-full px-12  max-h-[120px]">
+            <div class="navbar-start">
+              <div class="dropdown ">
+                <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-24 md:w-32  lg:hidden">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="absolute hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            <div class="navbar-center py-2">
+                <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-4xl font-bold lg:text-white">Fruit Burst</a>
+            </div>
+            <div class="navbar-end relative">
+                <input type="text" placeholder="Type here" class="input input-bordered  max-h-[70px]  w-full max-w-[400px] rounded-full hidden lg:flex" />
+                <i class=" invisible lg:visible fa-solid fa-magnifying-glass absolute right-[30px]"></i>
+
+              
+            </div>
+          </div>
+    </nav>
+    <!-- slider section -->
+    <div class="carousel w-full mt-14 ">
+      <!-- slider1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero min-h-screen " style="border-radius: 8px;
+        background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url('./images/banner1.png');
+        ">
+        
+         
+          <div class="hero-content text-center text-neutral-content">
+            
+            <div class="max-w-2xl">
+              
+              <h1 class="mb-5 text-7xl font-extrabold max-w-[661px] mx-auto ">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-xl">We supply highly quality organic products.</p>
+              <button class="btn rounded-lg bg-[#F85559] border-0 text-base px-7 font-extrabold text-white w-[154px]">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class=" invisible lg:visible flex mx-auto bg-white gap-12 px-20 py-12 shadow-lg rounded-lg absolute left-28 top-[80%]">
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit5.png" alt="">
+            <p>Mango</p>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <!-- slider 2 -->
+      <div id="slide2" class="carousel-item relative w-full flex flex-col">
+        <div class="hero min-h-screen " style="border-radius: 8px;
+        background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url('./images/banner2.png');
+        ">
+        
+         
+          <div class="hero-content text-center text-neutral-content">
+            
+            <div class="max-w-2xl">
+              
+              <h1 class="mb-5 text-7xl font-extrabold max-w-[661px] mx-auto ">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-xl">We supply highly quality organic products.</p>
+              <button class="btn rounded-lg bg-[#F85559] border-0 text-base px-7 font-extrabold text-white w-[154px]">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class=" invisible lg:visible flex mx-auto bg-white gap-12 px-20 py-12 shadow-lg rounded-lg absolute left-28 top-[80%]">
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit5.png" alt="">
+            <p>Mango</p>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <!-- slider3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero min-h-screen " style="border-radius: 8px;
+        background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url('./images/banner3.png');
+        ">
+        
+         
+          <div class="hero-content text-center text-neutral-content">
+            
+            <div class="max-w-2xl">
+              
+              <h1 class="mb-5 text-7xl font-extrabold max-w-[661px] mx-auto ">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-xl">We supply highly quality organic products.</p>
+              <button class="btn rounded-lg bg-[#F85559] border-0 text-base px-7 font-extrabold text-white w-[154px]">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class=" invisible lg:visible flex mx-auto bg-white gap-12 px-20 py-12 shadow-lg rounded-lg absolute left-28 top-[80%]">
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit5.png" alt="">
+            <p>Mango</p>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <!-- slider 4 -->
+      <div id="slide4" class="carousel-item relative w-full ">
+        <div class="hero min-h-screen " style="border-radius: 8px;
+        background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),url('./images/banner4.png');
+        ">
+        
+         
+          <div class="hero-content text-center text-neutral-content">
+            
+            <div class="max-w-2xl">
+              
+              <h1 class="mb-5 text-7xl font-extrabold max-w-[661px] mx-auto ">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 text-xl">We supply highly quality organic products.</p>
+              <button class="btn rounded-lg bg-[#F85559] border-0 text-base px-7 font-extrabold text-white w-[154px]">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class=" invisible lg:visible flex mx-auto bg-white gap-12 px-20 py-12 shadow-lg rounded-lg absolute left-28 top-[80%]">
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit5.png" alt="">
+            <p>Mango</p>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+ </header>
+      
+  </body>
 </html>
